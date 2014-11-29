@@ -1,4 +1,4 @@
-# bitcoin-fs
+# multinomial-pmf
 
 multinomial probability mass function
 
