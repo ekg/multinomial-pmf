@@ -1,10 +1,10 @@
 {
   "name": "multinomial-pmf",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "multinomial probability mass function",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,15 @@
   "author": "Erik Garrison",
   "license": "MIT",
   "dependencies": {
-    "multinomial": "0.0.0"
+    "multinomial": "0.0.0",
+    "multinomial-ln": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/ekg/multinomial-pmf/issues"
   },
   "homepage": "https://github.com/ekg/multinomial-pmf",
-  "devDependencies": {}
+  "devDependencies": {
+    "tap-spec": "^2.1.1",
+    "tape": "^3.0.3"
+  }
 }

@@ -1,5 +1,9 @@
 # multinomial-pmf
 
+[![NPM](https://nodei.co/npm/multinomial-pmf.png?global=true)](https://nodei.co/npm/multinomial-pmf/)
+
+[![Build Status](https://travis-ci.org/ekg/multinomial-pmf.svg)](https://travis-ci.org/ekg/multinomial-pmf)
+
 multinomial probability mass function
 
 ```
@@ -18,6 +22,18 @@ var diceProbs = [1,1,1,1,1,1].map(function(x) { return x/6 })
 multpmf(diceProbs, [1,2,0,3,0,1]) // fair six-sided die
 // 0.0015003429355281205
 ```
+
+There is also a log-space (but approximate) version:
+
+``` js
+var logmultpmf = require('multinomial-pmf').log
+logmultpmf([0.5, 0.5], [2, 3])
+// -1.163150809805681
+Math.exp(logmultpmf([0.5, 0.5], [2, 3]))
+// 0.31249999999999994
+```
+
+You'll incur some (small) loss of precision using the log version, but also you'll be able to handle much more complex multinomial distributions.
 
 ## What is this?
 
