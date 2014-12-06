@@ -6,11 +6,13 @@
 
 multinomial probability mass function
 
+## installation
+
 ```
 npm install multinomial-pmf
 ```
 
-## Usage
+## usage
 
 ``` js
 var multpmf = require('multinomial-pmf')
@@ -35,7 +37,7 @@ Math.exp(logmultpmf([0.5, 0.5], [2, 3]))
 
 You'll incur some (small) loss of precision using the log version, but also you'll be able to handle much more complex multinomial distributions.
 
-## What is this?
+## overview
 
 This module calculates the discrete sampling probability of a multiset of a given size from an underlying source multinomial distribution. In other words, it implements the [multinomial probability mass function](https://en.wikipedia.org/wiki/Multinomial_distribution#Probability_mass_function).
 
@@ -58,10 +60,6 @@ multpmf(countsToProbs(bag), pulls)
 
 The binomial distribution is a special case of the multinomial where the number of categories is 2.
 
-## To do
-
-- Work in log-space (suggests need for a log-space multinomial calculation)
-
-## License
+## license
 
 MIT

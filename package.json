@@ -1,6 +1,6 @@
 {
   "name": "multinomial-pmf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "multinomial probability mass function",
   "main": "index.js",
   "scripts": {
